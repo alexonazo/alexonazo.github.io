@@ -1,0 +1,125 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-toggler.navbar-toggler{
+    border-color: black;
+}
+
+.navbar button:focus{
+    transform: rotate(3.14rad);
+    transition: 1s;
+}
+
+#logo{
+    margin-right: 20px;
+}
+
+.cabecera{
+    position: relative;
+}
+
+.countdown-container{
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#countdown{
+    margin-top: 25px;
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box{
+    margin: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px white;
+}
+
+.cabecera button{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 30%);
+}
+
+.cabecera button:focus, button:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+.col-md-4:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.col-md-4 p{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.accordion-item button:focus{
+    box-shadow: none;
+    color: black;
+    background-color: whitesmoke;
+ }
+
+.mb-4 a:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+} 
+
+@media screen and (max-width: 1200px) {
+
+    .countdown-container{ 
+        top: 80%;
+}
+    .box{
+        margin: 5px;
+        
+    }
+
+    .box .text{
+        color: grey;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .countdown-container{
+        top: 46%;
+}
+    .box{
+        background-color: snow;
+    margin: 5px;
+    border: 2px solid whitesmoke;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px white;
+    }
+
+    .box .text{
+        color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
